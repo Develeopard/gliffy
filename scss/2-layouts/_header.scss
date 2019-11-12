@@ -16,8 +16,40 @@ header{
         font-size: .9rem;
         position: relative;
 
+        .logo{
+            padding: 0 30px;
+            color: $blue;
+        }
+
         .menu-btn{
+            //ispravi ovde da bude hamburger meni kako treba da bude
+            position: absolute;
             display: none;
+            width: 30px;
+            height: 3px;
+            background-color: $black;
+            top: 50%;
+            right: 10%;
+            cursor: pointer;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: -7px;
+                width: 30px;
+                height: 3px;
+                background-color: $black;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 7px;
+                width: 30px;
+                height: 3px;
+                background-color: $black;
+            }
+            // display: none;
 
             @media (max-width: 620px){
                 display: block;
