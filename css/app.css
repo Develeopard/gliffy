@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: pink;
+  position: fixed;
+  width: 100%;
+  height: 12vh;
+}
+header .navigation {
+  background-color: hotpink;
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 0.9rem;
+  position: relative;
+}
+header .navigation .menu-btn {
+  display: none;
+}
+@media (max-width: 620px) {
+  header .navigation .menu-btn {
+    display: block;
+  }
+}
+
+.menu {
+  outline: 2px solid yellow;
+  display: flex;
+  align-items: center;
+}
+.menu .free-btn {
+  margin-left: 50px;
+  color: #238af8;
+  padding: 10px 20px;
+  border: 1px solid #238af8;
+  border-radius: 8px;
+}
+.menu .free-btn:hover {
+  background-color: #238af8;
+  color: white;
+}
+@media (max-width: 620px) {
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    clip-path: circle(50px at 99% 1%);
+    -webkit-clip-path: circle(50px at 99% 1%);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
+  .menu .free-btn {
+    margin-left: 0;
+    margin-top: 40px;
+    background-color: #238af8;
+    color: white;
+    border: 1px solid white;
+  }
+}
+
+.menu-open {
+  clip-path: circle(900px at 99% 1%);
+  -webkit-clip-path: circle(900px at 99% 1%);
+  opacity: 1;
+}
+
+.menu-list {
+  border: 2px solid red;
+  display: flex;
+}
+.menu-list a {
+  margin-left: 50px;
+  color: #333333;
+  text-transform: capitalize;
+  position: relative;
+}
+.menu-list a:hover::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #238af8;
+}
+@media (max-width: 620px) {
+  .menu-list {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-list :nth-child(1) {
+    opacity: 0;
+  }
+  .menu-list :nth-child(2) {
+    background-color: black;
+  }
+  .menu-list :nth-child(3) {
+    background-color: #3b9772;
+    opacity: 1;
+  }
+  .menu-list li {
+    margin-top: 60px;
+  }
+  .menu-list li a {
+    margin-left: 0;
+    color: white;
+  }
+}
+
+.li-action {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*# sourceMappingURL=app.css.map */
