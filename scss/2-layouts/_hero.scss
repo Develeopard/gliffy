@@ -1,0 +1,21 @@
+.hero{
+    background-color: red;
+    background-image: url('../images/homepage-hero-2500.webp');
+    background-position: 40% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 20px 150px 10px;
+    width: 100%;
+
+    .hero-content{
+        border: 1px solid blue;
+        max-width: 600px;
+        margin-left: 20%;
+    }
+
+    @media (max-width: 470px){
+        .hero-content{
+            margin-left: 0;
+        }
+    }
+}

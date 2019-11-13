@@ -2,6 +2,7 @@
     outline: 2px solid yellow;
     display: flex;
     align-items: center;
+    padding: 0 20px 0 0;
 
     .free-btn{
         margin-left: 50px;
@@ -40,6 +41,6 @@
 }
 
 .menu-open{
-    clip-path: circle(900px at 99% 1%);
-    -webkit-clip-path: circle(900px at 99% 1%);
+    clip-path: circle(1000px at 99% 1%);
+    -webkit-clip-path: circle(1000px at 99% 1%);
 }
