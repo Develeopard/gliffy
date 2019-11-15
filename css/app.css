@@ -170,6 +170,7 @@ header .navigation .menu-btn .ham::after {
 }
 
 .hero-text {
+  color: #333333;
   margin-top: 100px;
 }
 .hero-text h1 {
