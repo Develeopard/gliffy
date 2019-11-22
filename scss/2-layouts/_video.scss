@@ -1,0 +1,30 @@
+.video{
+    // background-color: rebeccapurple;
+    background-image: url('../images/diagram-hero-background.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 150px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .video-content{
+        max-width: 800px;
+
+        .video-hls{
+            h1{
+                font-size: 3rem;
+                font-weight: normal;
+            }
+
+            h3{
+                font-size: 1.8rem;
+                font-weight: normal;
+                margin-top: 20px;
+            }
+        }
+    }
+}

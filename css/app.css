@@ -93,6 +93,31 @@ header .navigation .menu-btn .ham::after {
   }
 }
 
+.video {
+  background-image: url("../images/diagram-hero-background.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 150px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.video .video-content {
+  max-width: 800px;
+}
+.video .video-content .video-hls h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+.video .video-content .video-hls h3 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -203,6 +228,61 @@ header .navigation .menu-btn .ham::after {
   .hero-text h1 {
     font-size: 2.5rem;
   }
+}
+
+.video-silent-wrapper {
+  margin-top: 100px;
+  max-width: 800px;
+  padding: 200px;
+  position: relative;
+}
+.video-silent-wrapper video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 430px) {
+  .video-silent-wrapper {
+    padding: 100px;
+  }
+}
+
+.play-btn {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-top: 40px;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+.play-btn:hover {
+  border-bottom: 1px solid white;
+}
+
+.easy {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 20px;
+  color: white;
+}
+
+.white-btn {
+  background-color: white;
+  color: #238af8;
+  font-size: 1.4rem;
+  padding: 12px 70px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+.white-btn:hover {
+  background-color: #e0dddd;
+  border: 1px solid #238af8;
 }
 
 /*# sourceMappingURL=app.css.map */
