@@ -1,0 +1,30 @@
+.features{
+    // background-color: red;
+    width: 100%;
+
+    .features-content{
+        // background-color: pink;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+
+        .blue-btn{
+            color: white;
+            font-size: 1.2rem;
+            display: inline-block;
+            padding: 12px 35px;
+            margin-top: 50px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            background-color: $blue;
+            border-radius: 5px;
+            border: 1px solid $blue;
+            transition: all .3s;
+
+            &:hover{
+                color: $blue;
+                background-color: rgb(224, 221, 221);
+            }
+        }
+    }
+}
