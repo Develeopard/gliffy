@@ -121,6 +121,7 @@ header .navigation .menu-btn .ham::after {
 
 .features {
   width: 100%;
+  padding: 80px 0;
 }
 .features .features-content {
   max-width: 1100px;
