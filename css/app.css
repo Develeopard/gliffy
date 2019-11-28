@@ -146,6 +146,23 @@ header .navigation .menu-btn .ham::after {
   background-color: #e0dddd;
 }
 
+.video-display {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  display: none;
+}
+
+.video-display-show {
+  display: grid;
+  place-items: center;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -263,6 +280,7 @@ header .navigation .menu-btn .ham::after {
   max-width: 800px;
   padding: 200px;
   position: relative;
+  cursor: pointer;
 }
 .video-silent-wrapper video {
   position: absolute;
@@ -331,6 +349,29 @@ header .navigation .menu-btn .ham::after {
 .feature-box p {
   font-size: 0.9rem;
   margin-top: 20px;
+}
+
+.vd-content {
+  background-color: white;
+  max-width: 1200px;
+  max-height: 800px;
+  padding: 20px;
+}
+.vd-content .video-close-btn {
+  background-color: yellow;
+  background-image: url("../images/video-close-sign.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.vd-content video {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */

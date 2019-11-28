@@ -1,0 +1,24 @@
+.vd-content{
+    background-color: rgb(255, 255, 255);
+    max-width: 1200px;
+    max-height: 800px;
+    padding: 20px;
+
+    .video-close-btn{
+        background-color: yellow;
+        background-image: url('../images/video-close-sign.png');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    video{
+        width: 100%;
+        height: 100%;
+    }
+}
