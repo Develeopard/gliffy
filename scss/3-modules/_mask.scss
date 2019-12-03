@@ -1,0 +1,19 @@
+.masks{
+    // position: relative;
+    width: 100%;
+    height: auto;
+    .mask{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        // top: 0;
+        // left: 0;
+        // position: absolute;
+    
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
