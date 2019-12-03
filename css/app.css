@@ -181,7 +181,6 @@ header .navigation .menu-btn .ham::after {
   margin-top: 80px;
 }
 .platinum .platinum-content .platinum-togglers {
-  border: 1px solid blue;
   display: flex;
   margin: 0 auto;
   margin-top: 50px;
