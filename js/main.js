@@ -33,7 +33,7 @@ closeVideo.addEventListener('click', () =>{
 
 //TOGGLE CONTENT code
 function selectMask(e){
-    this.style.border-bottom = '3px solid red';
+    this.classList.add('bckg');
 }
 
 toggleHls.forEach(item => item.addEventListener('click', selectMask));

@@ -434,6 +434,10 @@ header .navigation .menu-btn .ham::after {
   height: auto;
 }
 
+.bckg {
+  color: yellow;
+}
+
 .mask-text {
   max-width: 50%;
   text-align: left;
