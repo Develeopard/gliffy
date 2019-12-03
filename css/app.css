@@ -208,6 +208,10 @@ header .navigation .menu-btn .ham::after {
   border-radius: 5px;
 }
 
+.add-border {
+  border-bottom: 3px solid #238af8 !important;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -434,8 +438,12 @@ header .navigation .menu-btn .ham::after {
   height: auto;
 }
 
-.bckg {
-  color: yellow;
+#mask-1-app, #mask-2-app {
+  display: none;
+}
+
+.show {
+  display: flex !important;
 }
 
 .mask-text {

@@ -16,8 +16,12 @@
             height: auto;
         }
     }
+
 }
 
-.bckg{
-    color: yellow;
+#mask-1-app, #mask-2-app{
+    display: none;
+}
+.show{
+    display: flex !important;
 }

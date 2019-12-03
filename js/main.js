@@ -33,7 +33,22 @@ closeVideo.addEventListener('click', () =>{
 
 //TOGGLE CONTENT code
 function selectMask(e){
-    this.classList.add('bckg');
+    removeBorder();
+    removeShow();
+    this.classList.add('add-border');
+    // grab item from DOM
+    const tabContentItem = document.querySelector(`#${this.id}-app`);
+    //add show class
+    tabContentItem.classList.add('show');
 }
 
+function removeBorder(){
+    toggleHls.forEach(item => item.classList.remove('add-border'));
+}
+
+function removeShow(){
+    mask.forEach(item => item.classList.remove('show'));
+}
+
+// toggleHls.forEach(item => item.addEventListener('mouseover', selectMask));
 toggleHls.forEach(item => item.addEventListener('click', selectMask));
