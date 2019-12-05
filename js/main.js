@@ -40,6 +40,7 @@ function selectMask(e){
     const tabContentItem = document.querySelector(`#${this.id}-app`);
     //add show class
     tabContentItem.classList.add('show');
+    
 }
 
 function removeBorder(){
@@ -50,5 +51,5 @@ function removeShow(){
     mask.forEach(item => item.classList.remove('show'));
 }
 
-// toggleHls.forEach(item => item.addEventListener('mouseover', selectMask));
+toggleHls.forEach(item => item.addEventListener('mouseover', selectMask));
 toggleHls.forEach(item => item.addEventListener('click', selectMask));

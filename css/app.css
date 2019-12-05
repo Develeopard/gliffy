@@ -164,13 +164,11 @@ header .navigation .menu-btn .ham::after {
 }
 
 .platinum {
-  background-color: red;
-  width: 100%;
+  background-color: #f2f2f2;
   padding: 30px;
   padding-bottom: 80px;
 }
 .platinum .platinum-content {
-  background-color: pink;
   max-width: 1300px;
   margin: 0 auto;
   text-align: center;
@@ -198,6 +196,20 @@ header .navigation .menu-btn .ham::after {
 .platinum .platinum-content .platinum-togglers h3:hover {
   border-bottom: 3px solid #238af8;
 }
+@media (max-width: 1240px) {
+  .platinum .platinum-content .platinum-togglers {
+    max-width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .platinum .platinum-content .platinum-togglers {
+    justify-content: space-between;
+  }
+  .platinum .platinum-content .platinum-togglers h3 {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+}
 .platinum .platinum-content .blue-btn {
   display: inline-block;
   background-color: #238af8;
@@ -206,6 +218,12 @@ header .navigation .menu-btn .ham::after {
   padding: 12px 60px;
   font-size: 1.2rem;
   border-radius: 5px;
+  border: 1px solid #238af8;
+  transition: all 0.3s;
+}
+.platinum .platinum-content .blue-btn:hover {
+  background-color: #e0dddd;
+  color: #238af8;
 }
 
 .add-border {
@@ -430,12 +448,30 @@ header .navigation .menu-btn .ham::after {
 .masks .mask {
   width: 100%;
   margin-top: 100px;
-  display: flex;
   justify-content: space-around;
+  display: flex;
 }
 .masks .mask img {
   max-width: 100%;
   height: auto;
+}
+@media (max-width: 1240px) {
+  .masks .mask img {
+    max-width: 400px;
+    height: 100%;
+  }
+}
+@media (max-width: 940px) {
+  .masks .mask {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 460px) {
+  .masks .mask img {
+    width: 100%;
+  }
 }
 
 #mask-1-app, #mask-2-app {
@@ -481,6 +517,22 @@ header .navigation .menu-btn .ham::after {
   left: -15px;
   transform: translateY(-50%);
   border-radius: 100%;
+}
+@media (max-width: 940px) {
+  .mask-text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .mask-text .blue-hl {
+    margin-top: 30px;
+  }
+  .mask-text p {
+    text-align: left;
+  }
+  .mask-text ul {
+    margin-top: 50px;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

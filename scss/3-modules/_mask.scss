@@ -5,8 +5,8 @@
     .mask{
         width: 100%;
         margin-top: 100px;
-        display: flex;
         justify-content: space-around;
+        display: flex;
         // top: 0;
         // left: 0;
         // position: absolute;
@@ -14,6 +14,25 @@
         img{
             max-width: 100%;
             height: auto;
+        }
+
+        @media (max-width: 1240px){
+            img{
+                max-width: 400px;
+                height: 100%;
+            }
+        }
+
+        @media (max-width: 940px){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 460px){
+            img{
+                width: 100%;
+            }
         }
     }
 
