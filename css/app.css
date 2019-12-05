@@ -230,6 +230,30 @@ header .navigation .menu-btn .ham::after {
   border-bottom: 3px solid #238af8 !important;
 }
 
+.trusted {
+  background-color: red;
+  width: 100%;
+  padding: 90px 10px;
+}
+.trusted .trusted-content {
+  background-color: pink;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.trusted .trusted-content .logos {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+.trusted .trusted-content .white-btn {
+  display: inline-block;
+  margin-top: 70px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -533,6 +557,34 @@ header .navigation .menu-btn .ham::after {
     margin-top: 50px;
     text-align: left;
   }
+}
+
+.trusted-text {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.trusted-text h2 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.trusted-article {
+  border: 3px solid yellow;
+  max-width: 50%;
+  padding-left: 40px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.trusted-article .info {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.trusted-article .info img {
+  padding-left: 30px;
 }
 
 /*# sourceMappingURL=app.css.map */

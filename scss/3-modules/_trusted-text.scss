@@ -1,0 +1,12 @@
+.trusted-text{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2{
+        font-size: 3rem;
+        font-weight: normal;
+    }
+}
